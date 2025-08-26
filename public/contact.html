@@ -1,0 +1,68 @@
+# Restaurant Contact Page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Our Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .contact-info {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .images img {
+            margin: 10px;
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <p>We would love to hear from you!</p>
+</header>
+
+<div class="contact-info">
+    <h2>Our Restaurant</h2>
+    <p>Address: 123 Foodie Lane, Flavor Town, FT 12345</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Email: contact@ourrestaurant.com</p>
+</div>
+
+<div class="images">
+    <img src="image1.jpg" alt="Delicious Dish 1">
+    <img src="image2.jpg" alt="Delicious Dish 2">
+    <img src="image3.jpg" alt="Delicious Dish 3">
+    <img src="image4.jpg" alt="Delicious Dish 4">
+    <img src="image5.jpg" alt="Delicious Dish 5">
+</div>
+
+<script>
+    const images = document.querySelectorAll('.images img');
+    const randomIndex = Math.floor(Math.random() * images.length);
+    images.forEach((img, index) => {
+        img.style.display = index === randomIndex ? 'block' : 'none';
+    });
+</script>
+
+</body>
+</html>
