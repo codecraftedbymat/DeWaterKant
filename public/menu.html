@@ -1,11 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Menu – Waterkant</title>
+<link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    
+
+<div class="background">
+  <img src="/visuals/logoDeWaterKant01.png" alt="">
+  <img src="/visuals/visualDeWaterkant01.png" alt="">
+  <img src="/visuals/visualDeWaterkant02.png" alt="">
+  <img src="/visuals/visualDeWaterkant03.png" alt="">
+  <img src="image5.jpg" alt="">
+</div>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">Waterkant</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="search" id="searchBox">
+        <input id="searchInput" type="text" class="search-input" placeholder="Rechercher un item…"/>
+        <button class="search-toggle" id="searchToggle" aria-label="Rechercher" title="Rechercher">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4b4b4b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="softs">Softs</button>
+  <button class="tab-btn" data-tab="bieren">Bières</button>
+  <button class="tab-btn" data-tab="cocktails">Cocktails & Spiritueux</button>
+  <button class="tab-btn" data-tab="coffee">Thés & Cafés</button>
+  <button class="tab-btn" data-tab="wines">Vins</button>
+</div>
+<p class="search-note" id="searchNote">Recherche active – affichage des résultats dans toutes les catégories.</p>
+
+<div id="softs" class="tab-panel active">
+  <div class="section-card">
+    <h2 class="section-title">Frisdranken</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Ice Tea</span><span class="dots"></span><span class="price">2.80</span></li>
+        <li class="menu-item"><span class="item-name">Coca Cola</span><span class="dots"></span><span class="price">2.80</span></li>
+        <li class="menu-item"><span class="item-name">Coca Cola Zero</span><span class="dots"></span><span class="price">2.80</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Fanta</span><span class="dots"></span><span class="price">2.80</span></li>
+        <li class="menu-item"><span class="item-name">Sprite</span><span class="dots"></span><span class="price">2.80</span></li>
+        <li class="menu-item"><span class="item-name">Pomton</span><span class="dots"></span><span class="price">2.80</span></li>
+        <li class="menu-item"><span class="item-name">Tennisbal</span><span class="dots"></span><span class="price">2.80</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Water</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Chaudfontaine Plat</span><span class="dots"></span><span class="price">2.80</span></li>
+        <li class="menu-item"><span class="item-name">Chaudfontaine Bruis</span><span class="dots"></span><span class="price">2.80</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Chaudfontaine Plat 0.5L</span><span class="dots"></span><span class="price">5.00</span></li>
+        <li class="menu-item"><span class="item-name">Chaudfontaine Bruis 0.5L</span><span class="dots"></span><span class="price">5.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Fruitsappen</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Minute Maid Orange</span><span class="dots"></span><span class="price">2.80</span></li>
+        <li class="menu-item"><span class="item-name">Minute Maid Appel</span><span class="dots"></span><span class="price">2.80</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Minute Maid Pompelmoes</span><span class="dots"></span><span class="price">2.80</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Tonic – Double Dutch</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Indian Tonic</span><span class="dots"></span><span class="price">3.30</span></li>
+        <li class="menu-item"><span class="item-name">Ginger Beer</span><span class="dots"></span><span class="price">3.30</span></li>
+        <li class="menu-item"><span class="item-name">Double Lemon</span><span class="dots"></span><span class="price">3.30</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Pink Grapefruit</span><span class="dots"></span><span class="price">3.30</span></li>
+        <li class="menu-item"><span class="item-name">Cucumber & Watermelon</span><span class="dots"></span><span class="price">3.30</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="bieren" class="tab-panel">
+  <div class="section-card">
+    <h2 class="section-title">Bieren op Tap</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">La Chouffe</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Cornet</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Tripel d’Anvers</span><span class="dots"></span><span class="price">4.30</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Liefmans</span><span class="dots"></span><span class="price">3.30</span></li>
+        <li class="menu-item"><span class="item-name">Stella</span><span class="dots"></span><span class="price">2.80</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Bieren op Fles</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Duvel</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Westmalle Dubbel</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Cherry Chouffe</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Desperados</span><span class="dots"></span><span class="price">4.50</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Strongbow Appel</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Strongbow Red Berries</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Jupiler</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="item-name">Palm</span><span class="dots"></span><span class="price">3.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Alchoholvrije Bieren</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Carlsberg 0%</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="name">Desperados 0%</span><span class="dots"></span><span class="price">3.50</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Liefmans 0%</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Cornet 0%</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">La Chouffe 0%</span><span class="dots"></span><span class="price">4.50</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="cocktails" class="tab-panel">
+  <div class="section-card">
+    <h2 class="section-title">Cocktails</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Mojito</span><span class="dots"></span><span class="price">12</span></li>
+        <li class="menu-item"><span class="item-name">Moscow Mule</span><span class="dots"></span><span class="price">12</span></li>
+        <li class="menu-item"><span class="item-name">Dark & Stormy</span><span class="dots"></span><span class="price">12</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Cuba Libre</span><span class="dots"></span><span class="price">12</span></li>
+        <li class="menu-item"><span class="item-name">Long Island Ice Tea</span><span class="dots"></span><span class="price">14</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Gin & Tonic</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Bombay Sapphire</span><span class="dots"></span><span class="price">9</span></li>
+        <li class="menu-item"><span class="item-name">Gordons Pink</span><span class="dots"></span><span class="price">9</span></li>
+        <li class="menu-item"><span class="item-name">+ Double Dutch Tonics</span><span class="dots"></span><span class="price">3.30</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Rhum • Vodka • Whiskey • Tequilla • Extra</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Bacardi Carta Blanca</span><span class="dots"></span><span class="price">9</span></li>
+        <li class="menu-item"><span class="item-name">Bacardi Carta Oro</span><span class="dots"></span><span class="price">9</span></li>
+        <li class="menu-item"><span class="item-name">Eristoff (Vodka)</span><span class="dots"></span><span class="price">8</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Jack Daniels</span><span class="dots"></span><span class="price">9</span></li>
+        <li class="menu-item"><span class="item-name">Johnny Walker Red</span><span class="dots"></span><span class="price">9</span></li>
+        <li class="menu-item"><span class="item-name">Camino (Tequilla)</span><span class="dots"></span><span class="price">8</span></li>
+        <li class="menu-item"><span class="item-name">Elixir d’Anvers</span><span class="dots"></span><span class="price">6</span></li>
+        <li class="menu-item"><span class="item-name">Disaronno</span><span class="dots"></span><span class="price">6</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="coffee" class="tab-panel">
+  <div class="section-card">
+    <h2 class="section-title">Thee</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Kamille</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="item-name">Rozenbottel</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="item-name">Groene</span><span class="dots"></span><span class="price">3.00</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Citroen</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="item-name">Zwarte</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="item-name">Verse gember thee</span><span class="dots"></span><span class="price">4.00</span></li>
+        <li class="menu-item"><span class="item-name">Verse munt thee</span><span class="dots"></span><span class="price">4.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Koffie</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Koffie</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="item-name">Koffie (Deca)</span><span class="dots"></span><span class="price">3.00</span></li>
+        <li class="menu-item"><span class="item-name">Cappuccino</span><span class="dots"></span><span class="price">3.50</span></li>
+        <li class="menu-item"><span class="item-name">Cappuccino (Deca)</span><span class="dots"></span><span class="price">3.50</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Latte Macchiato</span><span class="dots"></span><span class="price">4.00</span></li>
+        <li class="menu-item"><span class="item-name">Latte Macchiato (Deca)</span><span class="dots"></span><span class="price">4.00</span></li>
+        <li class="menu-item"><span class="item-name">Smaakje (Vanille, Caramel, Hazelnut, Speculoos)</span><span class="dots"></span><span class="price">+0.50</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="wines" class="tab-panel">
+  <div class="section-card">
+    <h2 class="section-title">Mousserend</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Masia de la Luz Cava Brut (Glas)</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Masia de la Luz Cava Brut (Fles)</span><span class="dots"></span><span class="price">25.00</span></li>
+        <li class="menu-item"><span class="item-name">Champagne Aucquart Brut (Fles)</span><span class="dots"></span><span class="price">55.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Wit</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Loup Gay Yellow (Glas)</span><span class="dots"></span><span class="price">4.00</span></li>
+        <li class="menu-item"><span class="item-name">Loup Gay Yellow (Fles)</span><span class="dots"></span><span class="price">23.00</span></li>
+        <li class="menu-item"><span class="item-name">L’Impossible Chardonnay (Glas)</span><span class="dots"></span><span class="price">5.50</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">L’Impossible Chardonnay (Fles)</span><span class="dots"></span><span class="price">27.00</span></li>
+        <li class="menu-item"><span class="item-name">Vila Fura Pinot Grigio (Glas)</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Vila Fura Pinot Grigio (Fles)</span><span class="dots"></span><span class="price">23.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Rosé</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Lou Gay Pink (Glas)</span><span class="dots"></span><span class="price">4.00</span></li>
+        <li class="menu-item"><span class="item-name">Lou Gay Pink (Fles)</span><span class="dots"></span><span class="price">23.00</span></li>
+        <li class="menu-item"><span class="item-name">Gassier Rosé (Fles)</span><span class="dots"></span><span class="price">40.00</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-card">
+    <h2 class="section-title">Rood</h2>
+    <div class="menu-grid">
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">Lou Gay Purple (Glas)</span><span class="dots"></span><span class="price">4.00</span></li>
+        <li class="menu-item"><span class="item-name">Lou Gay Purple (Fles)</span><span class="dots"></span><span class="price">23.00</span></li>
+        <li class="menu-item"><span class="item-name">L’Impossible Merlot (Glas)</span><span class="dots"></span><span class="price">5.50</span></li>
+      </ul>
+      <ul class="menu-list">
+        <li class="menu-item"><span class="item-name">L’Impossible Merlot (Fles)</span><span class="dots"></span><span class="price">27.00</span></li>
+        <li class="menu-item"><span class="item-name">Vila Fura Valpolicella (Glas)</span><span class="dots"></span><span class="price">4.50</span></li>
+        <li class="menu-item"><span class="item-name">Vila Fura Valpolicella (Fles)</span><span class="dots"></span><span class="price">23.00</span></li>
+        <li class="menu-item"><span class="item-name">Civetta Chianti Classico (Fles)</span><span class="dots"></span><span class="price">32.00</span></li>
+        <li class="menu-item"><span class="item-name">Mister Wisdom (Fles)</span><span class="dots"></span><span class="price">42.50</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Waterkant. Tous droits réservés.</p>
+</footer>
+
+<script src="/java/menu.js"></script>
+
 </body>
 </html>
