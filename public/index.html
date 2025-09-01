@@ -1,17 +1,61 @@
-*Landing page
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeWaterkant</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="" />
-        <h1>Welcome to De Waterkant</h1>
-        <h2>Where calm waters meet great flavors — dine, dock, and delight by the riverside.</h2>
+    <!-- Navigatie -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="./visuals/logoDeWaterKant01.png" alt="Logo De WaterKant" class="logo" />
+        </div>
+        <div class="navigation-items">
+            <a href="/">Home</a>
+            <a href="/">Ons Verhaal</a>
+            <a href="/">Menu</a>
+            <a href="/">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header / Hero -->
+    <header class="hero">
+        <img src="./visuals/visualDeWaterKantUitzicht01.jpg" alt="Uitzicht op de haven" class="hero-image" />
+        <div class="hero-text">
+            <h1>Welkom bij De WaterKant</h1>
+            <h2>Waar rustig water en verfijnde smaken samenkomen — geniet van een diner, leg aan in de haven en laat je verrassen aan de rivier.</h2>
+        </div>
     </header>
+
+    <!-- Sectie: Ons Verhaal -->
+    <section class="section hero-container">
+        <div class="column-left">
+            <h2>Ons Verhaal</h2>
+            <p>
+                Aan de waterkant, tussen de serene haven en verfijnde gastronomie, ontstond onze visie: een plek waar smaak en sfeer naadloos samenkomen.
+                Ontdek hoe vakmanschap en gastvrijheid hier de basis vormen van een tijdloze beleving.
+            </p>
+        </div>
+        <div class="column-right">
+            <img src="./visuals/visualDeWaterKant02.png" alt="Het verhaal achter De WaterKant" class="hero-visual" />
+        </div>
+    </section>
+
+    <!-- Sectie: Onze Kaart -->
+    <section class="section hero-container">
+        <div class="column-right">
+            <h2>Onze Kaart</h2>
+            <p>
+                Van een lichte lunch tot een sfeervol diner aan het water: ons menu brengt smaak, variatie en kwaliteit samen.
+                Met dagverse ingrediënten en aandacht voor detail creëren wij gerechten die voor ieder moment passen.
+            </p>
+            <button onclick="window.location.href='menu.html'">Ontdek ons menu</button>
+        </div>
+        <div class="column-left">
+            <img src="./visuals/visualDeWaterKant01.png" alt="Heerlijk dineren bij De WaterKant" class="hero-visual" />
+        </div>
+    </section>
 </body>
 </html>
