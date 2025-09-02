@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeWaterkant</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
 </head>
+
 <body>
-    <!-- Navigatie -->
+    <!-- Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo-container">
             <img src="./visuals/logoDeWaterKant01.png" alt="Logo De WaterKant" class="logo" />
@@ -29,7 +34,7 @@
         </div>
     </header>
 
-    <!-- Sectie: Ons Verhaal -->
+    <!-- Section: Ons Verhaal -->
     <section class="section hero-container">
         <div class="column-left">
             <h2>Ons Verhaal</h2>
@@ -37,13 +42,14 @@
                 Aan de waterkant, tussen de serene haven en verfijnde gastronomie, ontstond onze visie: een plek waar smaak en sfeer naadloos samenkomen.
                 Ontdek hoe vakmanschap en gastvrijheid hier de basis vormen van een tijdloze beleving.
             </p>
+            <button onclick="window.location.href='ourStory.html'">Verder lezen</button>
         </div>
         <div class="column-right">
             <img src="./visuals/visualDeWaterKant02.png" alt="Het verhaal achter De WaterKant" class="hero-visual" />
         </div>
     </section>
 
-    <!-- Sectie: Onze Kaart -->
+    <!-- Section: Onze Kaart -->
     <section class="section hero-container">
         <div class="column-right">
             <h2>Onze Kaart</h2>
@@ -57,5 +63,7 @@
             <img src="./visuals/visualDeWaterKant01.png" alt="Heerlijk dineren bij De WaterKant" class="hero-visual" />
         </div>
     </section>
+
+    <script src="../java/cursor.js"></script>
 </body>
 </html>
