@@ -1,19 +1,60 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ons Verhaal</title>
-  <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ons Verhaal</title>
+    <link rel="stylesheet" href="../css/style2.css" />
+</head>
 
-  /head>
 <body>
-    <nav>
-        <div class="logo">DeWaterkant</div>
+    <!-- Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+                <img src="./visuals/logoDeWaterKant01.png" alt="Logo De WaterKant" class="logo" />
+        </div>
         <div class="navigation-items">
-            <a href="/">"Home"</a>
-            <a href="Ons Verhaal"</a>
-            <a href="/">"Menu"</a>
-            <a href="/">"Contact"</a>
+            <a href="/">Home</a>
+            <a href="/">Ons Verhaal</a>
+            <a href="/">Menu</a>
+            <a href="/">Contact</a>
         </div>
     </nav>
+
+    <!-- Header / Hero -->
+    <header class="hero">
+        <img src="./visuals/visualDeWaterKantMenu02.png" alt="Uitzicht op de haven" class="hero-image" />
+            <div class="hero-text">
+                <h1>Het verhaal achter De WaterKant</h1>
+                <h2>Waar rustig water en verfijnde smaken samenkomen — geniet van een diner, leg aan in de haven en laat je verrassen aan de rivier.</h2>
+                <p>De WaterKant is geboren uit de gedeelde passie van twee levensgenieters: voor het water én voor gastvrijheid.
+                    Als fervente watersportliefhebbers vonden wij onze inspiratie in de serene kracht van de rivier.
+                    De kleine haven naast ons restaurant is meer dan een decor — het is een plek waar onze liefde voor varen, aanmeren en samenzijn voelbaar wordt.
+                    Diezelfde toewijding brengen wij naar de keuken en de tafels.
+                    Met aandacht, warmte en vakmanschap ontvangen wij iedere gast alsof het een goede vriend is.
+                    Ons doel? Een plek waar de energie van het water en de verfijning van gastronomie samenkomen in een ervaring die je bijblijft.
+                    Bij De WaterKant proef je niet alleen de gerechten, maar ook onze passie voor het leven langs en op het water.
+                </p>
+            </div>
+    </header>
+
+    <!-- Section: Ons Verhaal -->
+    <section class="section hero-container">
+        <div class="column-left">
+            <h2>Onze kaart</h2>
+            <p>Van lichte lunch tot een sfeervol diner aan het water: ons menu biedt voor ieder moment iets bijzonders.</p>
+            <button onclick="window.location.href='menu.html'">Ontdek het menu</button>
+        </div>
+        <div class="column-right">
+            <img src="./visuals/visualDeWaterKantMenu01.png" alt="Het verhaal achter De WaterKant" class="hero-visual" />
+        </div>
+    </section>
+
+    <script src="../java/cursor.js"></script>
+
+</body>
+</html>
